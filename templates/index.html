@@ -1,0 +1,189 @@
+{% include 'navbar.html' %}
+
+<div class="diagnose-hero">
+  <div class="diagnose-container">
+    <h1>Check Your Symptoms Instantly</h1>
+    <p class="subtext">
+      Enter symptoms below (e.g., <em>fever, chills, sore throat</em>) and get a possible diagnosis powered by rule-based AI logic.
+    </p>
+    <form method="POST">
+      <input type="text" name="symptoms" autocomplete="off" placeholder="Type your symptoms here..." required>
+      <button type="submit">Diagnose</button>
+    </form>
+
+    {% if diagnosis %}
+    <div class="diagnosis-popup">
+      <h2>🩺 Preliminary Diagnosis</h2>
+      <p>You may be experiencing symptoms consistent with:</p>
+      <p class="highlight">→ <strong>{{ diagnosis }}</strong></p>
+      {% if matched %}
+        <p class="match-note">(Matched symptoms: <em>{{ matched | join(', ') }}</em>)</p>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+<div class="supported-symptoms">
+  <h2>Recognized Symptoms</h2>
+  <p class="symptom-info">Below are the symptoms our system is trained to recognize and evaluate:</p>
+  <div class="symptom-list">
+    <span>Body ache</span><span>Chest discomfort</span><span>Chest pain</span><span>Chills</span>
+    <span>Coughing up mucus</span><span>Dry cough</span><span>Extreme fatigue</span><span>Facial pain</span>
+    <span>Fatigue</span><span>Fever</span><span>Headache</span><span>Itchy eyes</span><span>Loss of taste or smell</span>
+    <span>Mild cough</span><span>Nasal congestion</span><span>Painful swallowing</span><span>Persistent cough</span>
+    <span>Red spots on the roof of mouth</span><span>Runny nose</span><span>Shortness of breath</span>
+    <span>Sinus pressure</span><span>Sneezing</span><span>Sore throat</span><span>Swollen lymph nodes</span>
+    <span>Watery eyes</span><span>Wheezing</span>
+  </div>
+</div>
+
+<footer>
+  <p>Created by Muhammad Nadeem & Edward Kane • GSU • April 2025</p>
+</footer>
+
+<style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #003366, #e0f4ff);
+    margin: 0;
+    padding: 0;
+  }
+
+  .diagnose-hero {
+    background: transparent;
+    color: white;
+    padding: 100px 20px 40px 20px;
+    text-align: center;
+  }
+
+  .diagnose-container {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+  }
+
+  .diagnose-container h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .subtext {
+    font-size: 16px;
+    color: #dce7ff;
+    margin-bottom: 25px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    max-width: 500px;
+    padding: 14px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  button {
+    background: #ffcc00;
+    color: #002244;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 6px 14px rgba(255, 204, 0, 0.35);
+  }
+
+  button:hover {
+    background: #ffd633;
+    transform: scale(1.05);
+  }
+
+  .diagnosis-popup {
+    background: #ffffff;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    color: #002244;
+    text-align: center;
+  }
+
+  .diagnosis-popup h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .highlight {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  .match-note {
+    font-size: 14px;
+    color: #444;
+    font-style: italic;
+  }
+
+  .supported-symptoms {
+    max-width: 950px;
+    margin: 60px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+  }
+
+  .supported-symptoms h2 {
+    font-size: 24px;
+    color: #002244;
+    margin-bottom: 10px;
+  }
+
+  .symptom-info {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .symptom-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  .symptom-list span {
+    background: #e6f0ff;
+    padding: 10px 14px;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #003366;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+
+  .symptom-list span:hover {
+    background: #cce0ff;
+  }
+
+  footer {
+    background: #002244;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 14px;
+    margin-top: 80px;
+  }
+</style>

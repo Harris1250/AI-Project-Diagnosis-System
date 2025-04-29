@@ -1,0 +1,286 @@
+{% include 'navbar.html' %}
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>AI-Powered Disease Diagnosis</h1>
+    <p class="tagline">Instant insights. Transparent logic. No black-box AI.</p>
+    <a href="/diagnose" class="action-btn">Try It Now</a>
+  </div>
+</div>
+
+<div class="info-section">
+    <h2>Why This Tool Exists</h2>
+    <p>
+      Ever felt sick and Googled your symptoms, only to end up more confused? This platform makes that easier.
+    </p>
+    <p>
+      We’ve built a fast, simple tool that gives you a possible diagnosis based on the symptoms you type in — no complicated questions, no weird medical jargon. Just expert logic, applied instantly.
+    </p>
+    <p>
+      Instead of using AI models that you can't see or understand, this tool shows its reasoning clearly. You’ll know exactly why a condition was suggested — because you deserve answers, not guesses.
+    </p>
+</div>  
+
+<div class="features-section">
+  <div class="feature">
+    <span class="emoji">💡</span>
+    <p class="title">Rule-Based Logic</p>
+    <p class="desc">Every diagnosis is traceable through expert-written rules.</p>
+  </div>
+  <div class="feature">
+    <span class="emoji">🧠</span>
+    <p class="title">No ML Required</p>
+    <p class="desc">Delivers instant insights without model training or datasets.</p>
+  </div>
+  <div class="feature">
+    <span class="emoji">🌐</span>
+    <p class="title">Simple & Accessible</p>
+    <p class="desc">Clean UI, optimized for all devices and users.</p>
+  </div>
+</div>
+
+<div class="ml-section">
+  <h2>Designed With Machine Learning In Mind</h2>
+  <p>
+    While the current system is fully rule-based, it’s ready to integrate ML models in the future.
+    The backend is flexible, modular, and designed for growth.
+  </p>
+  <div class="ml-icons">
+    <div class="ml-icon" onclick="toggleMLCard('logic')">⚙️ Transparent Logic</div>
+    <div class="ml-icon" onclick="toggleMLCard('backend')">🤖 ML-Ready Backend</div>
+    <div class="ml-icon" onclick="toggleMLCard('design')">📡 Upgradeable Design</div>
+  </div>
+</div>
+
+<div id="ml-logic" class="ml-dropdown">
+  <h4>How Does Transparent Logic Help?</h4>
+  <ul>
+    <li>Gives full visibility into how decisions are made.</li>
+    <li>No mystery — users can trace the logic behind every diagnosis.</li>
+    <li>Supports educational & medical transparency standards.</li>
+  </ul>
+</div>
+
+<div id="ml-backend" class="ml-dropdown">
+  <h4>Why Is This Backend ML-Ready?</h4>
+  <ul>
+    <li>Modular structure makes it easy to integrate trained ML models.</li>
+    <li>Built in Python — connects seamlessly with data science tools.</li>
+    <li>Can accept probabilistic inputs from future ML scoring models.</li>
+  </ul>
+</div>
+
+<div id="ml-design" class="ml-dropdown">
+  <h4>How Would ML Work Here?</h4>
+  <ul>
+    <li>Train models on real patient data to identify subtle patterns.</li>
+    <li>Support personalized predictions based on user history.</li>
+    <li>Use neural nets to continuously adapt to new symptoms or illnesses.</li>
+  </ul>
+</div>
+
+<footer>
+  <p>Created by Muhammad Nadeem & Edward Kane • GSU • April 2025</p>
+</footer>
+
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #003366, #e0f4ff);
+  }
+
+  .hero {
+    background: transparent;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .tagline {
+    font-size: 20px;
+    color: #cce0ff;
+    margin-bottom: 25px;
+  }
+
+  .action-btn {
+    background: #ffcc00;
+    color: #003366;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(255, 204, 0, 0.4);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .action-btn:hover {
+    background: #ffd633;
+    transform: translateY(-3px) scale(1.05);
+  }
+
+  .info-section {
+    max-width: 800px;
+    margin: 60px auto 40px;
+    background: white;
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+    font-size: 16px;
+    color: #222;
+    line-height: 1.7;
+  }
+
+  .info-section h2 {
+    margin-bottom: 20px;
+    color: #002244;
+  }
+
+  .features-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+  }
+
+  .feature {
+    background: #f0f6ff;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    width: 280px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+    transition: 0.3s ease;
+  }
+
+  .feature:hover {
+    transform: translateY(-5px);
+    background-color: #e6f0ff;
+  }
+
+  .feature .emoji {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+
+  .feature .title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 8px;
+  }
+
+  .feature .desc {
+    font-size: 14px;
+    color: #444;
+  }
+
+  .ml-section {
+    background: linear-gradient(to bottom, #f0f8ff, #d7ecff);
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .ml-section h2 {
+    font-size: 26px;
+    color: #002244;
+    margin-bottom: 16px;
+  }
+
+  .ml-section p {
+    font-size: 15.5px;
+    color: #333;
+    max-width: 700px;
+    margin: 0 auto 20px;
+  }
+
+  .ml-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 30px;
+  }
+
+  .ml-icon {
+    background: white;
+    padding: 18px 24px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #002244;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .ml-icon:hover {
+    transform: translateY(-2px);
+  }
+
+  .ml-dropdown {
+    display: none;
+    background: white;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: #222;
+  }
+
+  .ml-dropdown ul {
+    padding-left: 20px;
+  }
+
+  .ml-dropdown li {
+    margin-bottom: 10px;
+  }
+
+  footer {
+    background: #002244;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 14px;
+    margin-top: 60px;
+  }
+</style>
+
+<script>
+  let currentOpen = null;
+
+  function toggleMLCard(id) {
+    const clicked = document.getElementById("ml-" + id);
+
+    if (currentOpen && currentOpen !== clicked) {
+      currentOpen.style.display = "none";
+    }
+
+    if (clicked.style.display === "block") {
+      clicked.style.display = "none";
+      currentOpen = null;
+    } else {
+      clicked.style.display = "block";
+      currentOpen = clicked;
+    }
+  }
+</script>

@@ -1,0 +1,68 @@
+User Manual for Web-Based Diagnosis Expert System
+--------------------------------------------------
+
+Project Name: 
+A Rule-Based Expert System for Diagnosing Multiple Diseases Based on Unique Symptoms
+
+Authors: Muhammad Nadeem & Edward Kane
+Course: CSc 4810/6810 – Artificial Intelligence
+Instructor: Dr. Yanqing Zhang
+
+--------------------------------------------------
+System Requirements:
+- Python 3.x installed (3.6 or higher recommended)
+- Flask installed (use: pip install flask)
+- Works on Windows, Mac, or Linux
+- Any modern web browser (Chrome, Edge, Firefox)
+
+--------------------------------------------------
+How to Launch the Web Application:
+
+1. Open Terminal or Command Prompt
+   - On Windows: Press Win + R, type 'cmd', press Enter
+   - OR open the terminal inside VS Code
+
+2. Navigate to your project folder
+   Example:
+   cd "C:\Users\User\Documents\AI Diagnosis"
+
+3. Run the Flask app:
+   python app.py
+
+4. Open your browser and go to:
+   http://127.0.0.1:5000/
+
+5. Use the system:
+   - Click the "Diagnose" tab
+   - Type symptoms like: fever, chills, sore throat
+   - System returns diagnosis based on matched symptoms
+
+--------------------------------------------------
+Sample Input/Output:
+
+Input:
+fever, body ache, fatigue
+
+Output:
+🩺 Preliminary Diagnosis:
+→ Flu
+(Matched symptoms: fever, body ache, fatigue)
+
+--------------------------------------------------
+Project Folder Structure:
+
+AI Diagnosis/
+├── app.py
+├── static/
+│   └── style.css (if used)
+├── templates/
+│   ├── home.html
+│   ├── index.html         ← Diagnose Page
+│   ├── about.html
+│   ├── future.html
+│   └── navbar.html
+
+--------------------------------------------------
+Contact:
+mnadeem2@student.gsu.edu
+ekane7@student.gsu.edu
