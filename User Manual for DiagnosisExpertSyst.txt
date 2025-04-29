@@ -4,7 +4,7 @@ User Manual for Web-Based Diagnosis Expert System
 Project Name: 
 A Rule-Based Expert System for Diagnosing Multiple Diseases Based on Unique Symptoms
 
-Authors: Muhammad Nadeem & Edward Kane
+Authors: Muhammad Nadeem
 Course: CSc 4810/6810 – Artificial Intelligence
 Instructor: Dr. Yanqing Zhang
 
@@ -65,4 +65,3 @@ AI Diagnosis/
 --------------------------------------------------
 Contact:
 mnadeem2@student.gsu.edu
-ekane7@student.gsu.edu

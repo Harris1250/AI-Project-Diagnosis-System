@@ -5,7 +5,7 @@ Project Title:
 A Rule-Based Expert System for Diagnosing Multiple Diseases Based on Unique Symptoms
 
 Authors:
-Muhammad Nadeem & Edward Kane
+Muhammad Nadeem
 Department of Computer Science, Georgia State University
 
 --------------------------------
@@ -56,4 +56,3 @@ How to Run:
 Contact:
 
 Muhammad Nadeem:  mnadeem2@student.gsu.edu  
-Edward Kane:       ekane7@student.gsu.edu
