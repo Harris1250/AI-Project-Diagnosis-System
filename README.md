@@ -8,24 +8,22 @@ This project was developed to demonstrate how rule-based AI can be applied to he
 
 ## 🧠 How It Works
 
-| Step | Description |
-|------|-------------|
-| 1️⃣ | The system uses a **rule-based approach** (no ML training required) |
-| 2️⃣ | Users input their symptoms through a **clean web interface** |
-| 3️⃣ | Based on **unique symptoms provided**, the system suggests a **possible diagnosis** |
-| 4️⃣ | Each disease has a **distinct set of symptoms** to avoid overlap and ensure clarity |
+- Rule-based logic (no machine learning or training required)
+- User selects symptoms through a simple web interface
+- System analyzes unique symptoms and suggests a possible diagnosis
+- Each disease has a distinct symptom set with no overlap
 
 ---
 
 ## ⚙️ Technologies Used
 
-| Type         | Tools & Purpose                       |
-|--------------|----------------------------------------|
-| Backend      | **Python (Flask)** – server and routing |
-| Frontend     | **HTML/CSS** – structure and styling   |
-| Interactivity| **JavaScript** – symptom interaction   |
-| Styling      | **Bootstrap** – responsive UI          |
-| AI Logic     | **Rule-based logic** – symptom-disease mapping |
+| Tech         | Purpose                      |
+|--------------|-------------------------------|
+| Python (Flask) | Backend logic and routing     |
+| HTML/CSS      | Webpage structure and design  |
+| JavaScript    | Basic interactivity           |
+| Bootstrap     | Responsive styling            |
+| Rule-Based Logic | Symptom-to-disease matching |
 
 ---
 
@@ -33,14 +31,12 @@ This project was developed to demonstrate how rule-based AI can be applied to he
 
 ```
 AI-Project-Diagnosis-System/
-│
-├── app.py                  # Main Flask application
+├── app.py
 ├── templates/
-│   └── index.html          # Main webpage layout
+│   └── index.html
 ├── static/
-│   ├── style.css           # Custom styles
-│   └── script.js           # JavaScript functionality
-├── requirements.txt        # Python package dependencies
+│   ├── style.css
+│   └── script.js
 ├── screenshots/
 │   ├── about-section.png
 │   ├── diagnose.png
@@ -49,34 +45,42 @@ AI-Project-Diagnosis-System/
 │   ├── homepage2.png
 │   ├── output1.png
 │   └── output2.png
-├── User_Manual.pdf         # Instructions for users
-├── IEEE_Paper.pdf          # Project research paper (IEEE format)
-├── Presentation_Slides.pptx # Final project presentation
-└── README.md               # This file
+├── requirements.txt
+├── User_Manual.pdf
+├── IEEE_Paper.pdf
+├── Presentation_Slides.pptx
+└── README.md
 ```
 
 ---
 
 ## 📸 Screenshots
 
-| Section             | Preview |
-|---------------------|---------|
-| **Homepage 1**      | ![Homepage1](screenshots/homepage1.png) |
-| **Homepage 2**      | ![Homepage2](screenshots/homepage2.png) |
-| **Diagnose Page**   | ![Diagnose](screenshots/diagnose.png) |
-| **Output Example 1**| ![Output1](screenshots/output1.png) |
-| **Output Example 2**| ![Output2](screenshots/output2.png) |
-| **About Section**   | ![About](screenshots/about-section.png) |
-| **Future Goals**    | ![Future](screenshots/future.png) |
+### 🔹 Homepage  
+![Homepage1](screenshots/homepage1.png)  
+![Homepage2](screenshots/homepage2.png)
 
-> Screenshots are located in the `/screenshots` folder and must be committed to GitHub to render properly.
+### 🔹 Diagnose Page  
+![Diagnose](screenshots/diagnose.png)
+
+### 🔹 Output Results  
+![Output1](screenshots/output1.png)  
+![Output2](screenshots/output2.png)
+
+### 🔹 About Section  
+![About](screenshots/about-section.png)
+
+### 🔹 Future Page  
+![Future](screenshots/future.png)
+
+> All images are stored in `/screenshots/` and must be uploaded with the repo for proper rendering.
 
 ---
 
 ## 🖥️ How to Run Locally
 
 ```bash
-# Clone this repository
+# Clone the repo
 git clone https://github.com/Harris1250/AI-Project-Diagnosis-System.git
 cd AI-Project-Diagnosis-System
 
@@ -87,48 +91,36 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Then open your browser and go to:  
-👉 `http://127.0.0.1:5000`
-
-✅ Fully functional local app  
-✅ No database or login required  
-✅ Lightweight & responsive
+Open your browser and go to `http://127.0.0.1:5000`
 
 ---
 
-## 💡 Example Diseases Covered
+## 💡 Diseases Covered
 
-| Disease         | Example Symptoms                        |
-|-----------------|------------------------------------------|
-| **Flu**         | Fever, Body Ache, Fatigue, Chills, Sore Throat |
-| **Common Cold** | Runny Nose, Sneezing, Sore Throat, Mild Cough |
-| **COVID-19**    | Loss of Taste/Smell, Dry Cough, Shortness of Breath |
-| **Sinus Infection** | Sinus Pressure, Headache, Facial Pain, Nasal Congestion |
-| **Pneumonia**   | Chest Pain, Coughing Up Mucus, Shortness of Breath |
-| **Allergies**   | Itchy Eyes, Sneezing, Nasal Congestion, Watery Eyes |
-| **Bronchitis**  | Persistent Cough, Wheezing, Chest Discomfort |
-| **Strep Throat**| Swollen Lymph Nodes, Painful Swallowing, Red Spots |
-| **Mononucleosis** | Sore Throat, Swollen Lymph Nodes, Extreme Fatigue |
+- **Flu**: Fever, body ache, fatigue, chills, sore throat  
+- **Common Cold**: Runny nose, sneezing, sore throat, mild cough  
+- **COVID-19**: Loss of taste/smell, dry cough, shortness of breath  
+- **Sinus Infection**: Sinus pressure, headache, facial pain, nasal congestion  
+- **Pneumonia**: Chest pain, mucus cough, shortness of breath  
+- **Allergies**: Itchy eyes, sneezing, nasal congestion, watery eyes  
+- **Bronchitis**: Persistent cough, wheezing, chest discomfort  
+- **Strep Throat**: Swollen lymph nodes, painful swallowing, red spots  
+- **Mononucleosis**: Sore throat, swollen lymph nodes, extreme fatigue  
 
 ---
 
 ## 📄 Additional Resources
 
-| Resource               | Description                                 |
-|------------------------|---------------------------------------------|
-| 📖 **User Manual**     | Learn how to use the system effectively     |
-| 📚 **IEEE Paper**      | In-depth technical documentation            |
-| 🎥 **Presentation Slides** | Quick overview of the system's design and functionality |
+- 📖 **User Manual** – Full instructions on system usage  
+- 📚 **IEEE Paper** – Technical write-up in IEEE format  
+- 🎥 **Presentation Slides** – Overview of design and logic
 
 ---
 
 ## 📬 Contact
 
-If you have questions or feedback, feel free to reach out!
-
-| Platform | Info |
-|----------|------|
-| 👨‍💻 GitHub   | [Harris1250](https://github.com/Harris1250) |
+**GitHub:** [Harris1250](https://github.com/Harris1250)  
+**Email:** harris.nadm@gmail.com
 
 ---
 
